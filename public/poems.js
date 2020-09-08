@@ -1,8 +1,6 @@
 /*
-
   POEMS.JS
   Code to generate poems from APIs calls.
-
 */
 
 
