@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Computer-generated poems about 2020.">
+    <meta name="keywords" content="2020, generative poetry, twitter api, creative coding, computational arts">
+    <meta name="author" content="Marina Cardoso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon.png" type="image/png" sizes="16x16">
+
+    <title>If 2020 were a poem</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+
+     <script src="https://cdn.jsdelivr.net/npm/p5@0.6.0/lib/p5.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/p5@0.6.0/lib/addons/p5.dom.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rita/1.1.51/rita.min.js"></script>
+
+     <div id="p5_loading" class="loading"></div>
+     <script src="poems.js" type="text/javascript"></script>
+     <script src="sketch.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <!-- info tab -->
+    <a href="#" class="info">Info</a>
+
+    <!-- info modal and content -->
+    <div class="info-background">
+        <div class="info-content">
+            <span class="close">&times;</span>
+            <p id="content-title">If 2020 were a poem</p>
+            <p id="content-text"><br>It has been a tough year. Still, we have words to inform, entertain and deceives us. Oh, dear social media, canvas and medium to our most diverse insights and complaints… <i>Those who walk the path of angry typing shall thrive in the end.</i><br>
+              <br>This page uses pieces of data to generate short free-verse poems. Each one is consisted of a random three-part combination:
+              <br>- A <a href="https://twitter.com/search?q=2020%20since%3A2020-03-20%20lang%3Aen%20-filter%3Aretweets%20-filter%3Ahashtags%20-filter%3Alinks%20-filter%3Amentions&src=typed_query" target="_blank" class="info-links">tweet</a> that mentions the current year;
+              <br>- A relevant headline from <a href="https://www.theguardian.com/uk" target="_blank" class="info-links">The Guardian</a> since last January;
+              <br>- A sentence from <a href="https://en.wikipedia.org/wiki/2020" target="_blank" class="info-links">Wikipedia 2020’s page</a>.<br>
+              <br>Coded in Javascript and p5.js, the algorithm makes requests to each API using specific parameters which are returned as text. Not every poem makes sense, not every poem is good—but that’s the charming part about it.<br>
+              <br>Created by <a href="https://marinacardoso.net/" target="_blank" class="info-links">Marina Cardoso</a> during her Computational Arts Masters at Goldsmiths University of London, 2020. You can see the source code <a href="https://github.com/mrncrds/if-2020-were-a-poem" target="_blank" class="info-links">here</a>.<br>
+            </p>
+        </div>
+    </div>
+
+    <!-- splash text -->
+    <h1 id="splash-desktop">Click anywhere to generate a poem</h1>
+    <h2 id="splash-mobile">Tap anywhere to<br>generate a poem</h2>
+  </body>
+</html>
