@@ -1,6 +1,8 @@
 /*
+
   SKETCH.JS
   Code for the website using p5.js library.
+
 */
 
 let canvas;

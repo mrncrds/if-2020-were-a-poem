@@ -1,6 +1,8 @@
 /*
+
   POEMS.JS
   Code to generate poems from APIs calls.
+
 */
 
 
@@ -140,7 +142,7 @@ function createPoem() {
   // split text into arrays of words
   let wikiWords = RiTa.tokenize(wikiPage);
   // get a random word from the array (excluding the "deaths" section)
-  wikiRandom = Math.floor(Math.random() * 6431); 
+  wikiRandom = Math.floor(Math.random() * 6201); 
 
 
   if (twitterWords[1] == undefined && twitterWords[2] == undefined) {

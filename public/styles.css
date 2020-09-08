@@ -1,12 +1,15 @@
 html {
+	/* use pencil image as the cursor */
 	cursor: url("imgs/pencil.png"), auto;
 }
 
 body {
+	/* yellow background */
 	background-color: #fff8cf;
 }
 
 #splash-desktop {
+	/* centered text on the page */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -19,11 +22,13 @@ body {
 }
 
 #splash-mobile {
+	/* will only be showed on small screens */
 	display: none;
 	visibility: hidden;
 }
 
 .info {
+	/* tab section on the top right */
 	position: fixed;
 	top: 30px;
 	right: 30px;
@@ -38,6 +43,7 @@ body {
 }
 
 .info-background {
+	/* create a darker background when "Info" is opened */
 	position: fixed;
     left: 0;
     top: 0;
@@ -54,6 +60,7 @@ body {
 }
 
 .info-content {
+	/* modal to show information about the project */
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -74,11 +81,16 @@ body {
 	color: #99937a;
 }
 
-#content-title {
-	padding-top: 1.5rem;
+#content-title-desktop {
+	padding-top: 1rem;
+	padding-bottom: 0.8rem;
 	font-family: Overpass Mono;
 	font-size: 24px;
-	line-height: 0;
+	line-height: 0.8;
+}
+
+#content-title-mobile {
+	display: none;
 }
 
 #content-text {
@@ -103,6 +115,7 @@ body {
 	}
 
 	#splash-mobile {
+		/* show the mobile version */
 		visibility: visible;
 		display: inline-block;
 		position: absolute;
@@ -133,10 +146,18 @@ body {
 		color: white;
 	}
 
-	#content-title {
+	#content-title-desktop {
+		display: none;
+		visibility: hidden;
+	}
+
+	#content-title-mobile {
+		display: block;
+		color: white;
 		font-family: Overpass Mono;
-		padding: 30px 2rem 0rem 2rem;
+		padding: 26px 2rem 0.5rem 2rem;
 		font-size: 22px;
+		line-height: 0.8;
 	}
 
 	#content-text {
