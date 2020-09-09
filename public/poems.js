@@ -172,7 +172,10 @@ function createPoem() {
   `${startSentence(firstTwitterWord)} ${twitterWords[1]} ${twitterWords[2]}`,
   `${guardianWords[0]} ${guardianWords[1]} ${guardianWords[2]}`,
   `${startSentence(firstWikiWord)} ${wikiWords[wikiRandom+1]}.`];
+  
+  // randomize poem array order
+  poemLines.sort();
 
-  // join poem lines with tab space and turn into upper case text
+  // join poem lines with tab space and add full stop
   poemText = poemLines.join("\n");
 }
